@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tell your trolley Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🛒 Tell Your Trolley Chatbot</h1>
+            <p>Find products quickly &amp; easily in our store</p>
+        </div>
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages"></div>
+            <div class="quick-actions">
+                <button class="quick-btn" onclick="sendQuickQuery('dals')">🍲 Dals</button>
+                <button class="quick-btn" onclick="sendQuickQuery('pulses')">🌱 Pulses</button>
+                <button class="quick-btn" onclick="sendQuickQuery('dry fruits')">🥜 Dry Fruits</button>
+                <button class="quick-btn" onclick="sendQuickQuery('cooking oil')">🛢️ Cooking Oil</button>
+                <button class="quick-btn" onclick="sendQuickQuery('ghee')">🧈 Ghee</button>
+                <button class="quick-btn" onclick="sendQuickQuery('rice products')">🍚 Rice Products</button>
+                <button class="quick-btn" onclick="sendQuickQuery('salt')">🧂 Salt</button>
+                <button class="quick-btn" onclick="sendQuickQuery('sugar')">🧂 Sugar</button>
+                <button class="quick-btn" onclick="sendQuickQuery('jaggery')">🧂 Jaggery</button>
+                <button class="quick-btn" onclick="sendQuickQuery('store hours')">🕐 Store Hours</button>
+            </div>
+        </div>
+        <div class="input-container">
+            <div class="input-wrapper">
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Ask me where to find a product..."
+                    autocomplete="off"
+                />
+                <button id="sendBtn" onclick="sendMessage()">Send</button>
+            </div>
+            <button class="clear-btn" onclick="clearChat()">Clear Chat</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
